@@ -234,7 +234,8 @@ public class UserHelperUI extends BaseHelperUI {
     }
 
     public void clickOnTheoryLine() {
-        click(By.xpath("//*/text()[normalize-space(.)='Theory']/parent::*"));
+       // click(By.xpath("//*/text()[normalize-space(.)='Theory']/parent::*"));
+        click(By.xpath("//span[contains(text(),'Theory')]"));
     }
     public void clickOnHomeWorkLine() {
         click(By.xpath("//*/text()[normalize-space(.)='Home work']/parent::*"));
@@ -254,7 +255,8 @@ public class UserHelperUI extends BaseHelperUI {
         return (isElementPresent(By.xpath("//*/text()[normalize-space(.)='Plan']/parent::*")));
     }
     public boolean isTheoryLinePresent() {
-        return (isElementPresent(By.xpath("//*/text()[normalize-space(.)='Theory']/parent::*")));
+        //return (isElementPresent(By.xpath("//*/text()[normalize-space(.)='Theory']/parent::*")));
+        return (isElementPresent(By.xpath("//span[contains(text(),'Theory')]")));
     }
     public boolean isHomeWorkLinePresent() {
         return (isElementPresent(By.xpath("//*/text()[normalize-space(.)='Home work']/parent::*")));

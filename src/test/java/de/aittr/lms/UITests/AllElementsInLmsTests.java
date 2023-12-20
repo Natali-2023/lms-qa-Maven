@@ -133,7 +133,7 @@ public class AllElementsInLmsTests extends TestBaseUI {
                         System.out.printf("    %-5s |   %-5s|    %-5s |      %-5s  |   %-5s|    %-5s%n", listOfLessons.get(i), plan, theory, homeWork, code, video + "    |");
 
                         app.getUserUI().clickOnNextSelectedLesson();
-                        app.getUserUI().pause(1000);
+                        app.getUserUI().pause(2000);
                     }
                     app.getUserUI().clickOnNextSelectedModule();
                     app.getUserUI().pause(1000);
